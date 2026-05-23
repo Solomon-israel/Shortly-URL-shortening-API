@@ -8,29 +8,59 @@
   </head>
   <body>
     <div class="container">
-      <nav>
-        <h2>Shortly</h2>
-        <div class="dropDown">
-          <p class="drop"></p>
-          <p class="drop"></p>
-          <p class="drop"></p>
+      <!-- header -->
+      <header>
+        <div class="header-left-container">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <!-- desktop nav -->
+          <nav class="hidden desktop-nav">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Resources</a>
+          </nav>
         </div>
-      </nav>
-
-      <div class="heroSection">
-        <div class="bannerImage">
+        <!-- desktop nav buttons -->
+        <div class="header-btns hidden">
+          <a href="#login" class="login-btn">Login</a>
+          <a href="#sign-up" class="sign-up">Sign</a>
+        </div>
+        <!-- Mobile toggle -->
+        <button class="mobile-toggle-btn" id="toggle-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- Mobile aside bar -->
+        <aside id="sidebar">
+          <nav>
+            <a href="#features">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Resources</a>
+          </nav>
+          <div class="btns">
+            <a href="#login" class="login-btn">Login</a>
+            <a href="#sign-up" class="sign-up">Sign</a>
+          </div>
+        </aside>
+      </header>
+      <!-- hero section -->
+      <section class="hero-container">
+        <div class="hero-image">
           <img src="./images/illustration-working.svg" alt="working" />
         </div>
 
-        <section class="message">
+        <div class="hero-text">
           <h1>More than just shorter links</h1>
           <p>
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
           </p>
           <button class="getStarted-Btn">Get Started</button>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <section class="linkShortener">
         <input type="url" placeholder="Shorten a link here..." />
@@ -152,5 +182,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
